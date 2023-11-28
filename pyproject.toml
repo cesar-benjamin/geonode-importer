@@ -41,5 +41,5 @@ push = true
 
 [tool.bumpver.file_patterns]
 "pyproject.toml" = ['version = "{version}"']
-"src/importer/__init__.py" = ["{VERSION}"]
+"src/importer/__init__.py" = ["{version}"]
 "setup.py" = ["{version}"]
