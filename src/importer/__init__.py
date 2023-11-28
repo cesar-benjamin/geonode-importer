@@ -20,9 +20,9 @@ import os
 
 project_dir = os.path.dirname(os.path.abspath(__file__))
 
-VERSION = (2023, 11, "alpha0")
-__version__ = ".".join([str(i) for i in VERSION])
-__author__ = "geosolutions-it"
-__email__ = "info@geosolutionsgroup.com"
-__url__ = "https://github.com/GeoNode/geonode-importer"
+VERSION = '1.0.6-alpha0'
+__version__ = VERSION
+__author__ = "César Benjamin"
+__email__ = "mathereall@gmail.com"
+__url__ = "https://github.com/cesar-benjamin/geonode-importer"
 default_app_config = "importer.apps.ImporterConfig"

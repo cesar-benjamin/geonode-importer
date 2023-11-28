@@ -65,7 +65,7 @@ To install `gdal-bin` on other platforms please refer to https://gdal.org/downlo
 
 Make sure you activated the virtualenv if you are using one.
 ```bash
-pip install -e git+https://github.com/geosolutions-it/geonode-importer.git@master#egg=geonode_importer
+pip install -e git+https://github.com/cesar-benjamin/geonode-importer.git@master#egg=geonode_importer
 ```
 
 ### Configuration
