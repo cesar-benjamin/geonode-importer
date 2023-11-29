@@ -1,5 +1,4 @@
 from setuptools import find_packages, setup
-import src.importer as importer
 
 
 def read_file(path: str):
@@ -7,15 +6,22 @@ def read_file(path: str):
         return file.read()
 
 
+NAME = 'dynamic-rest'
+DESCRIPTION = 'A GeoNode 4.1 app that implements a brand new upload/import flow'
+URL = "https://github.com/cesar-benjamin/geonode-importer"
+AUTHOR = "César Benjamin"
+VERSION = '1.0.6-alpha0'
+
+
 setup(
     name="geonode-importer",
-    version=importer.__version__,
-    url=importer.__url__,
-    description=importer.__doc__,
-    long_description="A GeoNode 4.1 app that implements a brand new upload/import flow",
+    version=VERSION,
+    url=URL,
+    description=DESCRIPTION,
+    long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
-    author=importer.__author__,
-    author_email=importer.__email__,
+    author=AUTHOR,
+    author_email='mathereall@gmail.com',
     platforms="any",
     package_dir={"": "src"},
     packages=find_packages("src"),
@@ -27,10 +33,5 @@ setup(
     ],
     package_data={"importer": ["templates/*.html", "templates/layers/*.html"]},
     include_package_data=True,
-    install_requires=[
-        "setuptools>=59",
-        "gdal>=3.2.2",
-        "pdok-geopackage-validator>=0.8.0",
-        "geonode-django-dynamic-model>=0.4.0",
-    ],
+    install_requires=open('install_requires.txt').readlines(),
 )

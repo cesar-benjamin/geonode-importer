@@ -1,0 +1,3 @@
+gdal>=3.2.2
+pdok-geopackage-validator>=0.8.0
+geonode-django-dynamic-model>=0.4.0
