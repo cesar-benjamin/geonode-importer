@@ -21,7 +21,7 @@ import os
 project_dir = os.path.dirname(os.path.abspath(__file__))
 
 # VERSION = ''
-__version__ = '1.0.6-alpha0'
+__version__ = '1.0.6-alpha1'
 __author__ = "César Benjamin"
 __email__ = "mathereall@gmail.com"
 __url__ = "https://github.com/cesar-benjamin/geonode-importer"
