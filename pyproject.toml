@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "geonode-importer"
-version = "1.0.6-alpha1"
+version = "1.0.6-alpha2"
 description = "A GeoNode 4.1 app that implements a brand new upload/import flow, updated to support django 4.2 and GDAL 3.4.1"
 readme = "README.md"
 authors = [{ name = "geosolutions-it", email = "info@geosolutionsgroup.com" }]
@@ -33,7 +33,7 @@ dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
 Homepage = "https://github.com/cesar-benjamin/geonode-importer"
 
 [tool.bumpver]
-current_version = "1.0.6-alpha1"
+current_version = "1.0.6-alpha2"
 version_pattern = "MAJOR.MINOR.PATCH[-TAGNUM]"
 commit_message = "bump version {old_version} -> {new_version}"
 tag_message = "{new_version}"
