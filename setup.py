@@ -4,7 +4,7 @@ NAME = 'dynamic-rest'
 DESCRIPTION = 'A GeoNode 4.1 app that implements a brand new upload/import flow'
 URL = "https://github.com/cesar-benjamin/geonode-importer"
 AUTHOR = "César Benjamin"
-VERSION = '1.0.6-alpha3'
+VERSION = '1.0.6-alpha4'
 
 
 def read_file(path: str):
