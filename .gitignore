@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+geonode_importer.egg-info/
+dist/
+
 # C extensions
 *.so
 
