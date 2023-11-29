@@ -46,3 +46,4 @@ push = true
 "pyproject.toml" = ['version = "{version}"']
 "src/importer/__init__.py" = ["{version}"]
 "setup.py" = ["{version}"]
+"setup.py" = ["{version}"]
