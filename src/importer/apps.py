@@ -16,7 +16,7 @@ def run_setup_hooks(*args, **kwargs):
     Run basic setup configuration for the importer app.
     Here we are overriding the upload API url
     """
-    from django.conf.urls import include, url
+    from django.urls import include, re_path
     from geonode.urls import urlpatterns
 
     url_already_injected = any(
@@ -30,5 +30,5 @@ def run_setup_hooks(*args, **kwargs):
     if not url_already_injected:
         urlpatterns.insert(
             0,
-            url(r"^api/v2/", include("importer.api.urls")),
+            re_path(r"^api/v2/", include("importer.api.urls")),
         )
