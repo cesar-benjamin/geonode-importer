@@ -1,5 +1,7 @@
 # geonode-importer
 
+This repo was forked to fix compatibility issues with geonode and django 4.2.x. Geonode 4.3.1 now is fully compatible, so, i have to archive this repo and delete it on Jan 2025.
+
 A GeoNode app that implements a flow to upload/import data files.  
 The modular logic adapts to different file types, and can be extended by implementing custom handlers.  
 
